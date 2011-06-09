@@ -11,7 +11,7 @@
 	<url>http://code.google.com/p/betting-exchange/</url>
 	<scm>
 		<connection>scm:svn:http://betting-exchange.googlecode.com/svn/trunk</connection>
-		<developerConnection>scm:svn:https://https://betting-exchange.googlecode.com/svn/trunk</developerConnection>
+		<developerConnection>scm:svn:https://betting-exchange.googlecode.com/svn/trunk</developerConnection>
 		<url>http://code.google.com/p/betting-exchange/</url>
 	</scm>
 
