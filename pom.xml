@@ -4,7 +4,7 @@
 	<!-- Project information -->
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>dk.betex</groupId>
-	<artifactId>betex</artifactId>
+	<artifactId>betex-engine</artifactId>
 	<name>betex</name>
 	<version>0.2-SNAPSHOT</version>
 	<inceptionYear>2008</inceptionYear>
