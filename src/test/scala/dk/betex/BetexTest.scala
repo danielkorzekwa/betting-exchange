@@ -37,7 +37,7 @@ class BetexTest {
 		betex.createMarket(20,"Match Odds","Fulham vs Wigan",1,new Date(2000),List(new Market.Runner(31,"Fulham"),new Market.Runner(42,"Wigan")))
 		assertEquals(2,betex.getMarkets.size)
 
-		val marketFromBetex1 = betex.getMarkets()(0)
+		val marketFromBetex1 = betex.getMarkets()(1)
 		assertEquals(20,marketFromBetex1.marketId)
 		assertEquals("Match Odds",marketFromBetex1.marketName)
 		assertEquals("Fulham vs Wigan",marketFromBetex1.eventName)
@@ -49,7 +49,7 @@ class BetexTest {
 		assertEquals(42,marketFromBetex1.runners(1).runnerId)
 		assertEquals("Wigan",marketFromBetex1.runners(1).runnerName)
 
-		val marketFromBetex2 = betex.getMarkets()(1)
+		val marketFromBetex2 = betex.getMarkets()(0)
 		assertEquals(10,marketFromBetex2.marketId)
 		assertEquals("Match Odds",marketFromBetex2.marketName)
 		assertEquals("Man Utd vs Arsenal",marketFromBetex2.eventName)
