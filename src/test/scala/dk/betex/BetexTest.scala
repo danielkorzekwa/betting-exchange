@@ -69,7 +69,7 @@ class BetexTest {
 	}
 
 	/**Tests for findMarket*/
-	@Test(expected=classOf[NoSuchElementException])
+	@Test(expected=classOf[IllegalArgumentException])
 	def testFindMarketNotExist() {
 		betex.findMarket(123)
 	}

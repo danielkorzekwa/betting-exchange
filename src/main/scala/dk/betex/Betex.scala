@@ -21,7 +21,7 @@ class Betex extends IBetex {
    * @return Created market
    */
   def createMarket(marketId: Long, marketName: String, eventName: String, numOfWinners: Int, marketTime: Date, runners: List[IMarket.IRunner]): IMarket = {
-    require(!markets.contains(marketId), "Market already exist for marketId=" + marketId)
+    require(!markets.contains(marketId), "Market already exists for marketId=" + marketId)
 
     val newMarket = new Market(marketId, marketName, eventName, numOfWinners, marketTime, runners)
     markets += marketId -> newMarket
@@ -33,7 +33,10 @@ class Betex extends IBetex {
    * @param marketId
    * @return Removed market or None if market didn't exist.
    */
-  def findMarket(marketId: Long): IMarket = markets(marketId)
+  def findMarket(marketId: Long): IMarket = {
+    require(markets.contains(marketId),"Market not found for marketId=" + marketId)
+    markets(marketId)
+  }
 
   /**Removes market from betting exchange.
    * @return Removed market or None if market didn't exist.
