@@ -12,12 +12,16 @@ object IBet {
 		type BetTypeEnum = Value
 		val BACK = Value("BACK")
 		val LAY = Value("LAY")
+		
+		 override def toString() = BetTypeEnum.values.mkString("BetTypeEnum [",", ","]")
 	}
 
 	object BetStatusEnum extends Enumeration{
 		type BetStatusEnum = Value
 		val M = Value("M") //matched
 		val U = Value("U") //unmatched
+		
+		 override def toString() = BetStatusEnum.values.mkString("BetStatusEnum [",", ","]")
 	}
 	
 }
