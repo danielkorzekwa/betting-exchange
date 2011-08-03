@@ -6,13 +6,13 @@
 	<groupId>dk.betex</groupId>
 	<artifactId>betex-engine</artifactId>
 	<name>betex-engine</name>
-	<version>0.2-SNAPSHOT</version>
+	<version>0.2</version>
 	<inceptionYear>2008</inceptionYear>
 	<url>http://code.google.com/p/betting-exchange/</url>
 	<scm>
-		<connection>scm:svn:http://betting-exchange.googlecode.com/svn/trunk</connection>
-		<developerConnection>scm:svn:https://betting-exchange.googlecode.com/svn/trunk</developerConnection>
-		<url>http://code.google.com/p/betting-exchange/</url>
+		<connection>scm:svn:http://betting-exchange.googlecode.com/svn/tags/betex-engine-0.2</connection>
+		<developerConnection>scm:svn:https://betting-exchange.googlecode.com/svn/tags/betex-engine-0.2</developerConnection>
+		<url>http://code.google.com/p/betting-exchange/tags/betex-engine-0.2</url>
 	</scm>
 
 	<distributionManagement>
